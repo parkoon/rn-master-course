@@ -15,6 +15,7 @@ const ListScreen = () => {
   ];
   return (
     <FlatList
+      keyExtractor={(el) => el.name}
       data={friends}
       renderItem={(el) => {
         // el === { item: { name: 'Friend #1' }, index: 0}
@@ -23,7 +24,7 @@ const ListScreen = () => {
         // 성능 이슈와 관계 있음!
         // 키를 따로 지정하지 않으면, 리액트는 모든 <Text />를 지우고 다시 재배열을 한다.
         // 키를 지정하면 그 키만 지운다.
-        return <Text key={el.index}>{el.item.name}</Text>;
+        return <Text>{el.item.name}</Text>;
       }}
     />
   );
