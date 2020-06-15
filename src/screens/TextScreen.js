@@ -4,7 +4,15 @@ import { Text, View, StyleSheet, TextInput } from "react-native";
 const TextScreen = () => {
   return (
     <View>
-      <TextInput style={styles.input} />
+      {/* 
+        1. 자동완성 (autoCorrect)
+        2. 첫 글자 대문자 (autoCapitalize)
+    */}
+      <TextInput
+        style={styles.input}
+        autoCapitalize="none"
+        autoCorrect={false}
+      />
     </View>
   );
 };
