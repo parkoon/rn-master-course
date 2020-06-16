@@ -1,3 +1,22 @@
+# 리액트 네이티브 개발을 위한 첫 발걸음
+
+## 여기서 배울 내용들
+
+1. 기본 리액트 문법
+   - props
+   - state
+   - component
+   - useState, useEffect, useReducer
+   - ...
+2. 리액트 네이티브 스타일링
+
+   [리액트 네이티브는 어떻게 스타일링을 할 수 있을까?](https://velog.io/@parkoon/React-Native-Layout-System)
+
+3. FlatList
+4. Button & TouchableOpacity
+5. View, Text, StyleSheet
+6. TextInput
+
 ## Commit message convention
 
 ---
