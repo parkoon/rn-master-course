@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Text, View, StyleSheet, TextInput } from "react-native";
 
 const TextScreen = () => {
+  const [value, setValue] = useState("");
   return (
     <View>
       {/* 
@@ -12,7 +13,11 @@ const TextScreen = () => {
         style={styles.input}
         autoCapitalize="none"
         autoCorrect={false}
+        value={value}
+        onChangeText={(text) => setValue(text)}
       />
+
+      <Text>this is text: {value}</Text>
     </View>
   );
 };
